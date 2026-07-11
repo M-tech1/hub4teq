@@ -1,0 +1,239 @@
+/* ═══════════════════════════════════════════════
+   hub4teq — Mobile Responsive Overrides
+   Imported after globals.css
+   ═══════════════════════════════════════════════ */
+
+/* ── Tablet (≤1024px) ── */
+@media (max-width: 1024px) {
+  /* Hero: stack vertically, full width */
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+  }
+  .hero-ctas {
+    justify-content: center !important;
+  }
+  .hero-trust {
+    justify-content: center !important;
+  }
+  .hero-orbit {
+    display: none !important;
+  }
+
+  /* Stats: 2 columns */
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .stat-divider:nth-child(2) {
+    border-right: none !important;
+  }
+  .stat-divider:nth-child(1),
+  .stat-divider:nth-child(2) {
+    border-bottom: 1px solid var(--border) !important;
+  }
+
+  /* Services explorer: single column */
+  .services-explorer {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Home services grid: 2 cols on tablet */
+  .home-services-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .services-sidebar {
+    position: static !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 6px !important;
+    padding: 8px !important;
+  }
+
+  /* Why us: stack */
+  .why-grid {
+    grid-template-columns: 1fr !important;
+    gap: 48px !important;
+  }
+  .why-images {
+    height: 320px !important;
+    max-width: 560px !important;
+    margin: 0 auto !important;
+  }
+
+  /* About hero */
+  .about-hero-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .about-img-stack {
+    height: 300px !important;
+    max-width: 540px !important;
+    margin: 0 auto !important;
+  }
+
+  /* Consulting */
+  .consulting-hero {
+    grid-template-columns: 1fr !important;
+  }
+  .consulting-cards {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  /* Pricing */
+  .pricing-grid {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+
+  /* Contact */
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .contact-sidebar {
+    position: static !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 14px !important;
+  }
+
+  /* Process: 2 cols */
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 28px !important;
+  }
+  .process-line {
+    display: none !important;
+  }
+
+  /* Testimonials */
+  .testimonials-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 28px !important;
+  }
+
+  /* Section header row */
+  .section-header-row {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  /* Desktop nav hidden */
+  .desktop-nav {
+    display: none !important;
+  }
+  .nav-cta {
+    display: none !important;
+  }
+  .hamburger {
+    display: flex !important;
+  }
+}
+
+/* ── Mobile (≤640px) ── */
+@media (max-width: 640px) {
+  /* Hero */
+  .hero-ctas button {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+  .hero-trust {
+    gap: 12px !important;
+  }
+
+  /* Stats: 2 cols but compact */
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  /* Services sidebar: 1 col on mobile */
+  .services-sidebar {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Form grids: always single col */
+  .booking-form-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Consulting cards: 1 col */
+  .consulting-cards {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Contact sidebar: 1 col */
+  .contact-sidebar {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Team */
+  .team-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  /* Values */
+  .values-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Footer: brand + contact go full width, Services/Company share a row, all left-aligned */
+  .footer-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 32px 24px !important;
+  }
+  .footer-brand,
+  .footer-contact-col {
+    grid-column: 1 / -1 !important;
+  }
+  .footer-brand-desc {
+    max-width: 340px !important;
+  }
+  .footer-cta {
+    flex-direction: column !important;
+    text-align: center !important;
+    padding: 28px 20px !important;
+  }
+  .footer-cta-btn {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  /* Process: 1 col */
+  .process-grid {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+
+  /* Services all grid */
+  .services-grid-all {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Home services grid: 1 col on mobile */
+  .home-services-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* General section padding reduction */
+  section {
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+  }
+}
+
+/* ── Very small phones (≤380px) ── */
+@media (max-width: 380px) {
+  .team-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .stats-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .stat-divider {
+    border-right: none !important;
+    border-bottom: 1px solid var(--border) !important;
+  }
+}
